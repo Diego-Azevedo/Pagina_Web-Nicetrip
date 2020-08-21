@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Curso Bootstrap</title>
+</head>
+
+<body>
+	<!--  Modal   -->
+	<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="loginEmail">Email</label>
+							<input type="email" class="form-control" id="loginEmail">
+						</div>
+						<div class="form-group">
+							<label for="loginSenha">Senha</label>
+							<input type="password" class="form-control" id="loginSenha">
+						</div>
+						<button type="submit" class="btn btn-danger">Entrar na Conta</button>
+						<small class="form-text text-muted">Esqueceu a senha? <a class="text-danger" href="#">Clique aqui</a>.</small>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fecha Modal  -->
+	<!-- ***********  Header com menu flex e wrap com menu hamburguer ***********   -->
+	<nav class="navbar navbar-expand-md navbar-light bg-danger fixed-top py-3 box-shadow">
+		<a class="navbar-brand" href="index.html"></a>
+		<img src="image/Group 1.svg" alt="caravan" />
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Locais</b></a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+						<button class="dropdown-item" type="button">América do Sul</button>
+						<button class="dropdown-item" type="button">
+							América do Norte
+						</button>
+						<button class="dropdown-item" type="button">
+							Europa
+						</button>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold" href="#">Planos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link font-weight-bold" href="#">Contato</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-dark ml-md-2" href="#">Inscreva-se</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ***********  Section 1 - carousel com 7 colunas e div conteúdo com 5 ***********   -->
+
+	<section class="container-fluid">
+		<div class="row bg-dark text-white">
+			<div class="col-lg-7 p-0">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="image/bruna4.jpg" class="d-block w-100" alt="Bruna">
+							<div class="carousel-caption ">
+								<h3 class="display-4">Argentina</h3>
+								<p class="lead"> Desde as paisagens áridas do norte do país até a cidade de Ushuaia, a mais meridional do mundo.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="image/paris.jpg" class="d-block w-100" alt="paris">
+							<div class="carousel-caption ">
+								<h3 class="display-4">Paris</h3>
+								<p class="lead">A terceira cidade mais visitada do planeta.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="image/california1.jpg" class="d-block w-100" alt="dublin">
+							<div class="carousel-caption ">
+								<h3 class="display-4">Califórnia</h3>
+								<p class="lead">Um dos melhores destinos para férias do mundo, a Califórnia oferece tudo o que você pode sonhar.</p>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-5 p-4 align-self-center">
+				<h1 class="display-4 ">Realize a viagem do seu sonho</h1>
+				<p class="lead">
+					O melhor local para viajar é com a Nicetrip, mais de 5000
+					excurções concluídas.
+				</p>
+				<form action="">
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" placeholder="Email" aria-label="Email" />
+						<span class="input-group-append">
+							<button class="btn btn-danger" type="button">
+								Inscreva-se
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5 bg-light text-center">
+		<div class="container">
+			<div class="my-5">
+				<span class="h6 d-block">A SUA VIAGEM DOS SONHOS COMEÇA AQUI!</span>
+				<h2 class="display-4 text-danger">Aproveite as Vantagens NiceTrip</h2>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-md-6">
+					<div style="height: 100px;" class="d-flex justify-content-center">
+						<img src="image/icones/passaporte.svg" alt="Passaporte">
+					</div>
+					<h3>Documentos</h3>
+					<p>Sem dores de cabeça, nós cuidamos da documentação.</p>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div style="height: 100px;" class="d-flex justify-content-center">
+						<img src="image/icones/passagens.svg" alt="Passagens">
+					</div>
+					<h3>Passagens</h3>
+					<p>Os melhores preços do mercado.</p>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div style="height: 100px;" class="d-flex justify-content-center">
+						<img src="image/icones/translado.svg" alt="Translado">
+					</div>
+					<h3>Translado</h3>
+					<p>Rápido e na hora, você não perde tempo com deslocamento.</p>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div style="height: 100px;" class="d-flex justify-content-center">
+						<img src="image/icones/praias.svg" alt="Praias">
+					</div>
+					<h3>Praias</h3>
+					<p>Buena onda nas praias mais belas.</p>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div style="height: 100px;" class="d-flex justify-content-center">
+						<img src="image/icones/bagagens.svg" alt="Bagagens">
+					</div>
+					<h3>Bagagens</h3>
+					<p>Leve tudo o que precisa, não há limite para bagagens.</p>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div style="height: 100px;" class="d-flex justify-content-center">
+						<img src="image/icones/turismo.svg" alt="Turismo">
+					</div>
+					<h3>Turismo</h3>
+					<p>Os melhores pontos turísticos.</p>
+				</div>
+
+			</div>
+
+			<a href="planos.html" class="btn btn-danger btn-lg mt-4">Comprar Plano</a>
+		</div>
+	</section>
+	<section id="home-quote" class="p-md-3 d-flex align-items-end">
+		<blockquote class="blockquote text-center text-white p-md-3 p-3 ">
+			<p class="display-4 size ">"A felicidade não está na estrada que leva a algum lugar. A felicidade é a própria estrada."</p>
+			<footer class="blockquote-footer text-white">Bob Dylan</footer>
+		</blockquote>
+	</section>
+
+	<section class="container  py-5">
+		<div class="my-5 text-center">
+			<span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+			<h2 class="display-4 text-danger">Perguntas frequentes</h2>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-6" id="perguntasFrequentes">
+				<div class="pergunta py-2">
+					<a class="lead text-danger" data-toggle="collapse" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">→ <b>É possível cancelar a viagem?</b></a>
+					<div id="pergunta1" class="collapse show" data-parent="#perguntasFrequentes" role="tabpanel">
+						<p>Sim, se acontecer algum imprevisto, você pode cancelar a viagem sem custos, com no mínimo 45 dias de antecedência. Depois disso você poderá cancelar, mas pagará uma taxa de cancelamento.</p>
+					</div>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="pergunta py-2">
+					<a class="lead text-danger" data-toggle="collapse" href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">→ <b>Qual a garantia que tenho se perder o voo?</b></a>
+					<div id="pergunta2" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+						<p>Você deve pegar o voo marcado, caso não consiga, você terá que contratar outro voo por conta própria.</p>
+					</div>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="pergunta py-2">
+					<a class="lead text-danger" data-toggle="collapse" href="#pergunta3" aria-expanded="true" aria-controls="pergunta3">→ <b>Preciso de passaporte para viajar para a Europa?</b></a>
+					<div id="pergunta3" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+						<p>Sim, você precisa de um passaporte válido para destinos fora da América do Sul.</p>
+					</div>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="pergunta py-2">
+					<a class="lead text-danger" data-toggle="collapse" href="#pergunta4" aria-expanded="true" aria-controls="pergunta4">→<b> Qual o melhor destino de viagem?</b></a>
+					<div id="pergunta4" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+						<p>Os destinos mais procurados são as capitais de países da Europa, mas você pode ir para qualquer lugar, basta sonhar.</p>
+					</div>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="pergunta py-2">
+					<a class="lead text-danger" data-toggle="collapse" href="#pergunta5" aria-expanded="true" aria-controls="pergunta5">→<b> Vocês dão descontos para grupos grandes?</b></a>
+					<div id="pergunta5" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+						<p>Podemos negociar, fale diretamente com um de nossos atendentes, queremos ouvir sua proposta, temos certeza que fecharemos negócio.</p>
+					</div>
+				</div>
+				<div class="dropdown-divider"></div>
+			</div>
+		</div>
+		<div class="text-center my-4">
+			<p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+			<a class="btn btn-danger btn-lg" href="#">Entre em Contato</a>
+		</div>
+	</section>
+
+	<section class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-lg-12 p-0">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="/image/foto1.svg" class="d-block w-100" alt="alexandre">
+						</div>
+						<div class="carousel-item">
+							<img src="/image/foto3.svg" class="d-block w-100" alt="edy">
+						</div>
+						<div class="carousel-item">
+							<img src="image/foto2.svg" class="d-block w-100" alt="diego">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-dark text-white">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-md-3 col-6">
+					<h4 class="h6">PÁGINAS</h4>
+					<ul class="list-unstyled">
+						<li><a class="text-danger" href="#">Planos</a></li>
+						<li><a class="text-danger" href="#">Contato</a></li>
+						<li><a class="text-danger" href="#">Inscreva-se</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-6">
+					<h4 class="h6">LOCAIS</h4>
+					<ul class="list-unstyled">
+						<li><a class="text-danger" href="#">California</a></li>
+						<li><a class="text-danger" href="#">Paris</a></li>
+						<li><a class="text-danger" href="#">Argentona</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="h6">DADOS DE CONTATO</h4>
+					<ul class="list-unstyled text-secondary">
+						<li>nicetrip@nicetrip.com.br</li>
+						<li>54 99999-9999</li>
+						<li>De Seg. à Sab. das 8h às 18h</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4 class="h6">REDES SOCIAIS</h4>
+					<ul class="list-unstyled">
+						<li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+						<li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+						<li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bg-danger text-center py-3">
+			<p class="mb-0">Nicetrip © 2020. Todos os direitos reservados.</p>
+			<p class="size2 mt-3">Site exemplo Bootstrap 4.5, criado e desenvolvido por Diego Azevedo em 20/08/2020.</p>
+
+		</div>
+	</footer>
+
+
+
+	<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
